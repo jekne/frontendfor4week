@@ -10,16 +10,16 @@ export default function Home() {
     setPlayers(response.data);
     // setPlayers("hey hey");
   }
-  // console.log("Players state", players);
+  console.log("Players state", players);
   useEffect(() => {
     fetchPlayers();
   }, []);
 
   return (
     <div>
-      {/* {players.map((players) => (
-        <h2>{players}</h2>
-      ))} */}
+      {players.map((player) => (
+        <h2>{player.name}</h2>
+      ))}
       This is the Home Page
     </div>
   );
