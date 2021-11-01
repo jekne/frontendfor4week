@@ -18,7 +18,12 @@ export default function Home() {
   return (
     <div>
       {players.map((player) => (
-        <h2>{player.name}</h2>
+        <li>
+          <h1>{player.name}</h1>
+          <h>{player.age}</h>
+          <h2>{player.nationality} </h2>
+          <img src={player.profilePicture} />
+        </li>
       ))}
       This is the Home Page
     </div>

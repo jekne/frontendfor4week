@@ -9,6 +9,10 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <div>
+        <button onClick="Button">this is a button</button>
+      </div>
+
       <Switch>
         <Route path="/loginpage" component={LoginPage} />
         <Route exact path="/" component={Home} />
